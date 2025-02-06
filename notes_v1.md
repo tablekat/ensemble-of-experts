@@ -32,3 +32,7 @@ I think it ignored one of the things I told it to compare against - the google t
 Random thought I haven't even read the section yet, the benefits of sparse activation in regular MoE are improved by not only horizontal specialization but vertical specialization, getting even sparser activation.
 
 "at each layer, only the top experts continue. This cascading sparsity means that an input quickly funnels down to a small set of possible paths" - hell yeah
+
+### Under "Experimental Configuration"
+
+"A simple default is full connectivity (any expert in layer $\ell$ can route to any expert in $\ell+1$) and let gating learn the conditional pathways. More structured connectivity (like forming a tree) could be experimented with to see if it improves specialization or stability." - Ok so deep research does know what i'm talking about.
